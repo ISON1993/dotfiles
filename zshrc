@@ -89,6 +89,6 @@ export PATH="/opt/jdk/bin:$PATH"
 export JAVA_HOME="/opt/jdk"
 
 # pyenv
-#export PATH="/home/tuzhenyu/.pyenv/bin:$PATH"
-#eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
+export PATH="/home/tuzhenyu/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
