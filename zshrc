@@ -92,3 +92,11 @@ export JAVA_HOME="/opt/jdk"
 export PATH="/home/tuzhenyu/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# set maven environment
+export M2_HOME=/opt/maven
+export PATH=$M2_HOME/bin:$PATH
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/tuzhenyu/.sdkman"
+[[ -s "/home/tuzhenyu/.sdkman/bin/sdkman-init.sh" ]] && source "/home/tuzhenyu/.sdkman/bin/sdkman-init.sh"
