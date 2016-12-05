@@ -85,8 +85,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # java
-export PATH="/opt/jdk/bin:$PATH"
-export JAVA_HOME="/opt/jdk"
+#export PATH="/opt/jdk/bin:$PATH"
+#export JAVA_HOME="/opt/jdk"
 
 # pyenv
 export PATH="/home/tuzhenyu/.pyenv/bin:$PATH"

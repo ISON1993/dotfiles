@@ -1,0 +1,90 @@
+set gdefault
+set ignorecase
+
+" Clipboard
+set clipboard+=unnamed
+
+" Escape
+vnoremap <C-[> <Esc>
+
+" Moving blocks of text in visual mode
+vnoremap < <gv
+vnoremap > >gv
+
+" Select all text
+map <Space>a ggVG
+
+" vim-surround
+set surround
+
+" ============================================================================
+" Editor control
+" ============================================================================
+
+" Reload .ideavimrc
+nnoremap <Space>vs :source ~/.ideavimrc<CR>
+
+
+" ============================================================================
+" IDE actions
+" ============================================================================
+nnoremap /                     :action Find<CR>
+nnoremap n                     :action FindNext<CR>
+nnoremap N                     :action FindPrevious<CR>
+nnoremap U                     :action $Redo<CR>
+nnoremap <Space>R              :action Replace<CR>
+
+" Acejump
+" nnoremap f                     :action AceJumpAction<CR>
+" nnoremap <Space>jj             :action AceJumpAction<CR>
+" nnoremap <Space>jl             :action AceJumpLineAction<CR>
+
+" emacsIDEAs
+nnoremap <Space>jj             :action emacsIDEAs.AceJump<CR>
+nnoremap <Space>jw             :action emacsIDEAs.AceJumpWord<CR>
+nnoremap <Space>jc             :action emacsIDEAs.AceJumpCut<CR>
+
+" Goto
+nnoremap <Space>gc             :action GotoClass<CR>
+nnoremap <Space>gf             :action GotoFile<CR>
+nnoremap <Space>gs             :action GotoSymbol<CR>
+nnoremap <Space>gt             :action GotoTest<CR>
+nnoremap <Space>gd             :action GotoDeclaration<CR>
+nnoremap <Space>gl             :action GotoLine<CR>
+nnoremap <Space>gi             :action GotoImplementation<CR>
+
+" Help
+nnoremap <Space>hd             :action QuickJavaDoc<CR>
+nnoremap <Space><Space>        :action GotoAction<CR>
+
+" Refactor
+nnoremap <Space>rr             :action ReformatCode<CR>
+
+" New
+nnoremap <Space>nf<Space>      :action NewFile<CR>
+nnoremap <Space>nc<Space>      :action NewClass<CR>
+nnoremap <Space>nd<Space>      :action NewDir<CR>
+nnoremap <Space>npi<Space>     :action NewPackageInfo<CR>
+nnoremap <Space>ns<Space>      :action NewScratchFile<CR>
+nnoremap <Space>ng             :action Generate<CR>
+
+" File related
+nnoremap <Space>fr             :action RecentFiles<CR>
+nnoremap <Space>fd             :action CloseContent<CR>
+
+" Git
+nnoremap <Space>Ga             :action Git.Add<CR>
+nnoremap <Space>Gb             :action Git.Branches<CR>
+nnoremap <Space>Gl             :action Git.Log<CR>
+nnoremap <Space>GG             :action Vcs.QuickListPopupAction<CR>
+nnoremap <Space>Gp             :action Vcs.Push<CR>
+nnoremap <Space>Gu             :action Vcs.UpdateProject<CR>
+
+" Window
+nnoremap <Space>w/             :action VimWindowSplitVertical<CR>
+nnoremap <Space>w-             :action VimWindowSplitHorizontal<CR>
+nnoremap <Space>wj             :action VimWindowDown<CR>
+nnoremap <Space>wk             :action VimWindowUp<CR>
+nnoremap <Space>wh             :action VimWindowLeft<CR>
+nnoremap <Space>wl             :action VimWindowRight<CR>
+nnoremap <Space>wd             :action VimWindowClose<CR>
