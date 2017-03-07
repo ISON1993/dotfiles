@@ -5,5 +5,6 @@ dotfiles
 
 ### 正在管理的软件设置：
 
--	**zshrc**: oh-my-zsh的配置文件,通过软链接将此文件链接到主目录下的,zshrc文件
--	**ideavimrc**:IDEA的Vim插件的设置文件
+-	**zshrc**: 　oh-my-zsh的配置文件,通过软链接将此文件链接到主目录下的,zshrc文件
+-	**ideavimrc**:　IDEA的Vim插件的设置文件
+-	**myShell**:　ubuntu软件安装脚本
