@@ -87,4 +87,4 @@ nnoremap <Space>wj             :action VimWindowDown<CR>
 nnoremap <Space>wk             :action VimWindowUp<CR>
 nnoremap <Space>wh             :action VimWindowLeft<CR>
 nnoremap <Space>wl             :action VimWindowRight<CR>
-nnoremap <Space>wd             :action VimWindowClose<CR>
+nnoremap <Space>wc             :action VimWindowClose<CR>
